@@ -1,0 +1,10 @@
+import re
+patt = '[a-zA-Z0-9]+@[a-zA-Z]+\.(com|net|in)'
+def isValid(email):
+    if re.search(patt, email):
+        print('Email is Valid')
+    else:
+        print('Email is invalid')
+
+isValid('demo@gmail.com')
+isValid('a123@.com')
